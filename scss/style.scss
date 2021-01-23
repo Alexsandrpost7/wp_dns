@@ -6,11 +6,20 @@ body {
     margin: 0;
 }
 
+
+.section-header-bckr {
+  
+    background-color: rgb(241, 134, 34);
+    
+}
+
 .section-header {
-   color: white;
+    color: white;
     
     &-title {
-        background-color: rgb(241, 134, 34);
+        max-width: 1240px;
+        margin: 0 auto;
+        // background-color: rgb(241, 134, 34);
         display: flex;
         justify-content: space-between;
         height: 25px;
@@ -18,10 +27,8 @@ body {
 
     
         &__menu {
-
-            
         
-        height: 50%;
+            height: 50%;
 
                 ul {
                 list-style: none; 
@@ -37,17 +44,16 @@ body {
                             text-decoration: none;
                             outline: none;
                             transition: .2s linear;
-                            color: white;
+                             color: white;
                         }
                         
                         a:hover {
                             color: rgb(251, 187, 127);
                         }
                     
-                    }
-
-    
         }
+    
+    }
 
         &-contact {
             display: flex;
@@ -62,9 +68,10 @@ body {
     }
 }
 
+.section-header-title__menu-submenu  li a {color: black;}
+
 .section-header-title__menu-top > li {
     display: inline-block;
-    // margin-right: 20px;
     position: relative;
 }
 
@@ -85,23 +92,83 @@ body {
     display: block;
     background-color: white;
     border: 1px solid gray;
-    box-shadow: gray;
+    box-shadow: -13px 11px 12px -5px rgba(123, 125, 128, 0.2);
     border-radius: 4px;
     height: 100px;
     width: 200px;
 
 }
+// ++++++++++++++  section-header nav +++++++++++
+.section-header__nav {
+    max-width: 1240px;
+    margin: 0 auto;
 
-// ++++++++++++++ / section-header +++++++++++
-// ++++++++++++++ section-grid ++++++++++++
+    &-wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+            &-logo {}
+            &-search {
+                width: 450px;
+                height: 40px;
+                margin-top: 15px;
+                border: 1px solid rgba(123, 125, 128, 0.2);
+                border-radius: 8px;
+                box-shadow: -13px 11px 12px -5px rgba(123, 125, 128, 0.2);
+
+                &-form {
+                    padding: 2px;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-top: 10px;                    
+                }
+                &-input {
+                    border: none;
+                }
+                &-btn {
+                    border: none;
+                    background-color: white;
+                }
+            }
+            &-btn {
+                display: flex;
+                padding-top: 15px;
+
+                &-item {
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+                &-item:nth-child(even) {
+                    padding: 0 35px 0 35px;
+                }
+            }
+    }
+}
+
+
+// ++++++++++++++ / section-header nav +++++++++++
+
+// ++++++++++++++ / section-header ++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++ section-grid +++++++++++++++++++++++++++++++++++++++++++
+.grid-size {
+
+    // max-width: 1240px;
+    // margin: 0 auto;
+}
+
 .section-grid {
 
+    background-color: rgba(185, 187, 189, 0.404);
     display: grid;
+    justify-content: center;
+
     grid-template-columns: 250px 450px 150px 300px;
     grid-template-rows: 200px 150px 150px;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    background-color: rgba(185, 187, 189, 0.404);
     padding: 20px 40px 20px 40px;
     
     &__menu {

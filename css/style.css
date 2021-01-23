@@ -2,10 +2,14 @@ body {
   padding: 0;
   margin: 0; }
 
+.section-header-bckr {
+  background-color: #f18622; }
+
 .section-header {
   color: white; }
   .section-header-title {
-    background-color: #f18622;
+    max-width: 1240px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     height: 25px;
@@ -32,6 +36,9 @@ body {
       .section-header-title-contact__telefone {
         padding-right: 10px; }
 
+.section-header-title__menu-submenu li a {
+  color: black; }
+
 .section-header-title__menu-top > li {
   display: inline-block;
   position: relative; }
@@ -49,18 +56,52 @@ body {
   display: block;
   background-color: white;
   border: 1px solid gray;
-  box-shadow: gray;
+  box-shadow: -13px 11px 12px -5px rgba(123, 125, 128, 0.2);
   border-radius: 4px;
   height: 100px;
   width: 200px; }
 
+.section-header__nav {
+  max-width: 1240px;
+  margin: 0 auto; }
+  .section-header__nav-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .section-header__nav-wrapper-search {
+      width: 450px;
+      height: 40px;
+      margin-top: 15px;
+      border: 1px solid rgba(123, 125, 128, 0.2);
+      border-radius: 8px;
+      box-shadow: -13px 11px 12px -5px rgba(123, 125, 128, 0.2); }
+      .section-header__nav-wrapper-search-form {
+        padding: 2px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px; }
+      .section-header__nav-wrapper-search-input {
+        border: none; }
+      .section-header__nav-wrapper-search-btn {
+        border: none;
+        background-color: white; }
+    .section-header__nav-wrapper-btn {
+      display: flex;
+      padding-top: 15px; }
+      .section-header__nav-wrapper-btn-item a {
+        text-decoration: none;
+        color: black; }
+      .section-header__nav-wrapper-btn-item:nth-child(even) {
+        padding: 0 35px 0 35px; }
+
 .section-grid {
+  background-color: rgba(185, 187, 189, 0.404);
   display: grid;
+  justify-content: center;
   grid-template-columns: 250px 450px 150px 300px;
   grid-template-rows: 200px 150px 150px;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  background-color: rgba(185, 187, 189, 0.404);
   padding: 20px 40px 20px 40px; }
   .section-grid__menu {
     background-color: white;
