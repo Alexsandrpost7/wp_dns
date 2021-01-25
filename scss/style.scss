@@ -19,7 +19,6 @@ body {
     &-title {
         max-width: 1240px;
         margin: 0 auto;
-        // background-color: rgb(241, 134, 34);
         display: flex;
         justify-content: space-between;
         height: 25px;
@@ -29,6 +28,19 @@ body {
         &__menu {
         
             height: 50%;
+            width: 600px;
+                a {
+                    padding-left: 20px;
+                    float: left;
+                    transition: 0.5s all;
+                    color: white;
+                    text-decoration: none;
+                    outline: none;
+                }
+
+                a:hover {
+                    color: rgb(251, 187, 127);
+                }
 
                 ul {
                 list-style: none; 
@@ -36,24 +48,9 @@ body {
                 padding: 0;
                 }
 
-                    &-top  {
-                        
-                        a {
-                            display: block;
-                            padding: 0 10px;
-                            text-decoration: none;
-                            outline: none;
-                            transition: .2s linear;
-                             color: white;
-                        }
-                        
-                        a:hover {
-                            color: rgb(251, 187, 127);
-                        }
-                    
-        }
+                    &-top  {}
     
-    }
+        }
 
         &-contact {
             display: flex;
@@ -68,36 +65,51 @@ body {
     }
 }
 
-.section-header-title__menu-submenu  li a {color: black;}
-
-.section-header-title__menu-top > li {
-    display: inline-block;
+.menu__list-dns {
     position: relative;
-}
+    ul  a {
+        color: black
+    }
 
+    &::after {
+    content: " ";
+    position: absolute;
+    border: 5px solid transparent;
+    border-top: 5px solid white;
+    top: 8px;
+    right: 390px;
+    transition: 0.5s;
+    }
+
+    &:hover .section-header-title__menu-submenu {
+        top: 0;
+        display: block;
+        background-color: white;
+        top: 35px;
+        left: 50px;
+        box-shadow: -13px 11px 12px -5px rgba(123, 125, 128, 0.2);
+        border-radius: 4px;
+        transition: 0.5s;
+        
+        &::after {
+            content: " ";
+            position: absolute;
+            rder-color:  transparent transparent white;
+            top: -32px;
+            left: 80px;
+            transition: 0.5s;
+            border: 13px solid transparent;
+            border-bottom: 13px solid white;
+        }
+
+    }
+}
 .section-header-title__menu-submenu {
     position: absolute;
-    top: 27px;
-    left: -60px;
-    bottom: 0;
-    width: 100%;
-    z-index: 10;
-
-    // Сд полоску, чтобы меню нижнее не убегало
-
     display: none;
 }
 
-.section-header-title__menu ul li:hover  .section-header-title__menu-submenu{
-    display: block;
-    background-color: white;
-    border: 1px solid gray;
-    box-shadow: -13px 11px 12px -5px rgba(123, 125, 128, 0.2);
-    border-radius: 4px;
-    height: 100px;
-    width: 200px;
 
-}
 // ++++++++++++++  section-header nav +++++++++++
 .section-header__nav {
     max-width: 1240px;
