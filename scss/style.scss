@@ -122,41 +122,103 @@ body {
 
             &-logo {}
             &-search {
-                width: 450px;
+                width: 400px;
                 height: 40px;
                 margin-top: 15px;
-                border: 1px solid rgba(123, 125, 128, 0.2);
+                margin-right: -40px;
+                margin-left: -40px;
                 border-radius: 8px;
-                box-shadow: -13px 11px 12px -5px rgba(123, 125, 128, 0.2);
+                background-color: rgba(197, 200, 206, 0.342);
+                
+                &:hover {
+                    box-shadow: -13px 11px 12px -5px rgba(123, 125, 128, 0.2);
+                    background-color: #fff;
+                }
 
                 &-form {
                     padding: 2px;
                     display: flex;
                     justify-content: space-between;
-                    padding-top: 10px;                    
+                    padding-top: 10px;   
+
                 }
-                &-input {
-                    border: none;
-                }
-                &-btn {
-                    border: none;
-                    background-color: white;
-                }
+                    &-input {
+                        border: none;
+                    }
+                    &-btn {
+                        border: none;
+                        background-color: white;
+
+                        &-icon {
+                            width: 14px;
+                            height: 14px;
+                        }
+                          
+                    }
             }
             &-btn {
                 display: flex;
                 padding-top: 15px;
 
                 &-item {
+
+                    &-icon {
+                        width: 14px;
+                        height: 14px;
+                        padding-right: 8px;
+
+                    }
+                    
+                    &-text {
+                        font-size: 18px;
+                        color: rgba(81, 81, 85, 0.89);
+                        
+                    }
+
                     a {
                         text-decoration: none;
                         color: black;
                     }
+
+                    &:hover &-text {
+                        color: rgb(251, 187, 127);
+                    }
                 }
                 &-item:nth-child(even) {
-                    padding: 0 35px 0 35px;
+                    padding: 0 25px 0 25px;
                 }
             }
+    }
+}
+.section-header__nav-login {
+
+    &-icon {
+        width: 14px;
+        height: 14px;
+    }
+
+    button {
+        border: 1px solid rgba(81, 81, 85, 0.89);;
+        border-radius: 13px;
+        font-size: 18px;
+        color: rgba(81, 81, 85, 0.89);
+        height: 35px;
+        width: 70px;
+        background-color: #fff;
+    }
+    
+    button:hover {
+        background-color: rgb(241, 134, 34);
+        color: white;
+    }
+
+    &-text {
+        font-size: 18px;
+        color: rgba(81, 81, 85, 0.89);
+        border: none;
+        border: 0;
+        border-radius: 0;
+        background: #ccc;
     }
 }
 
@@ -173,7 +235,7 @@ body {
 
 .section-grid {
 
-    background-color: rgba(185, 187, 189, 0.404);
+    background-color: rgba(197, 200, 206, 0.342);
     display: grid;
     justify-content: center;
 

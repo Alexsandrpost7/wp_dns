@@ -80,12 +80,16 @@ body {
     justify-content: space-around;
     align-items: center; }
     .section-header__nav-wrapper-search {
-      width: 450px;
+      width: 400px;
       height: 40px;
       margin-top: 15px;
-      border: 1px solid rgba(123, 125, 128, 0.2);
+      margin-right: -40px;
+      margin-left: -40px;
       border-radius: 8px;
-      box-shadow: -13px 11px 12px -5px rgba(123, 125, 128, 0.2); }
+      background-color: rgba(197, 200, 206, 0.342); }
+      .section-header__nav-wrapper-search:hover {
+        box-shadow: -13px 11px 12px -5px rgba(123, 125, 128, 0.2);
+        background-color: #fff; }
       .section-header__nav-wrapper-search-form {
         padding: 2px;
         display: flex;
@@ -96,17 +100,54 @@ body {
       .section-header__nav-wrapper-search-btn {
         border: none;
         background-color: white; }
+        .section-header__nav-wrapper-search-btn-icon {
+          width: 14px;
+          height: 14px; }
     .section-header__nav-wrapper-btn {
       display: flex;
       padding-top: 15px; }
+      .section-header__nav-wrapper-btn-item-icon {
+        width: 14px;
+        height: 14px;
+        padding-right: 8px; }
+      .section-header__nav-wrapper-btn-item-text {
+        font-size: 18px;
+        color: rgba(81, 81, 85, 0.89); }
       .section-header__nav-wrapper-btn-item a {
         text-decoration: none;
         color: black; }
+      .section-header__nav-wrapper-btn-item:hover .section-header__nav-wrapper-btn-item-text {
+        color: #fbbb7f; }
       .section-header__nav-wrapper-btn-item:nth-child(even) {
-        padding: 0 35px 0 35px; }
+        padding: 0 25px 0 25px; }
+
+.section-header__nav-login-icon {
+  width: 14px;
+  height: 14px; }
+
+.section-header__nav-login button {
+  border: 1px solid rgba(81, 81, 85, 0.89);
+  border-radius: 13px;
+  font-size: 18px;
+  color: rgba(81, 81, 85, 0.89);
+  height: 35px;
+  width: 70px;
+  background-color: #fff; }
+
+.section-header__nav-login button:hover {
+  background-color: #f18622;
+  color: white; }
+
+.section-header__nav-login-text {
+  font-size: 18px;
+  color: rgba(81, 81, 85, 0.89);
+  border: none;
+  border: 0;
+  border-radius: 0;
+  background: #ccc; }
 
 .section-grid {
-  background-color: rgba(185, 187, 189, 0.404);
+  background-color: rgba(197, 200, 206, 0.342);
   display: grid;
   justify-content: center;
   grid-template-columns: 250px 450px 150px 300px;
