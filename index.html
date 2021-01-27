@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Магазин ДНС</title>
     <link rel="stylesheet" href="/css/style.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
 </head>
 <body>
+    <!-- section header -->
    <section class="section-header">
        <div class="section-header-bckr">
 
@@ -88,11 +92,42 @@
         </div>
         <div class="section-header__notice">efgfe</div>
    </section>
+   <!-- / section header -->
    <!-- section-grid -->
    <section class="section-grid grid-size">
 
         <div class="section-grid__menu">231</div>
-        <div class="section-grid__slider">231</div>
+
+
+        <!-- slider swiper +++++++++++++++++++++++++++++ -->
+        <div class="section-grid__slider">
+
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="/img/sw-1_cr.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/sw-2_cr.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/sw-3_cr.png">
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div> 
+        </div>
+<!-- / slider swiper ++++++++++++++++++++++++++++ -->
         <div class="section-grid__sale">231</div>
         <div class="section-grid__offer">231</div>
         <div class="section-grid__news1">231</div>
@@ -105,5 +140,12 @@
    <section class="section-offer-2"></section>
    <section class="section-inform"></section>
    <section class="section-footer"></section>
+
+   <!-- Swiper Script -->
+     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+   <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+
+   <script src="/script/swiper_test.js"></script>
+
 </body>
 </html>

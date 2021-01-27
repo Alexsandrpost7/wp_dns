@@ -255,13 +255,27 @@ body {
     }
 
     &__slider {
-        background-color: purple;
+        // 600px x 200px
+        // background-color: purple;
         grid-column-start: 2;
         grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 2;
-    }
 
+     
+        .swiper-container {
+            width: 600px;
+            height: 200px;
+            // border: 2px solid black;
+        }
+        
+        // .swiper-button-next::after {
+        //     color: red;
+        // }
+
+    }
+   
+  
     &__sale {
         background-color: yellow;
         grid-column-start: 4;
