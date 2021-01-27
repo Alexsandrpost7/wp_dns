@@ -147,7 +147,7 @@ body {
   background: #ccc; }
 
 .section-grid {
-  background-color: rgba(197, 200, 206, 0.342);
+  background-color: rgba(206, 245, 255, 0.596);
   display: grid;
   justify-content: center;
   grid-template-columns: 250px 450px 150px 300px;
@@ -179,6 +179,45 @@ body {
     background-color: white;
     border-radius: 10px;
     box-shadow: -13px 11px 12px -5px rgba(123, 125, 128, 0.2); }
+    .section-grid__sale a:hover {
+      color: #fbbb7f; }
+    .section-grid__sale a {
+      color: black;
+      text-decoration: none; }
+    .section-grid__sale-title {
+      font-weight: bold;
+      padding-left: 25px;
+      padding-top: 20px; }
+    .section-grid__sale-subtitle li {
+      margin-bottom: 8px; }
+    .section-grid__sale-subtitle li:nth-child(1):before {
+      content: " ";
+      border-left: 2px solid orange;
+      padding-right: 10px; }
+    .section-grid__sale-subtitle li:nth-child(2):before {
+      content: " ";
+      border-left: 2px solid rgba(84, 223, 241, 0.897);
+      padding-right: 10px; }
+    .section-grid__sale-subtitle li:nth-child(3):before {
+      content: " ";
+      border-left: 2px solid #48e48b;
+      padding-right: 10px; }
+    .section-grid__sale-subtitle ul {
+      list-style: none; }
+    .section-grid__sale-btn {
+      padding-left: 25px; }
+      .section-grid__sale-btn-btn {
+        height: 35px;
+        width: 85px;
+        border: 1px solid orange;
+        background-color: white;
+        border-radius: 10px; }
+        .section-grid__sale-btn-btn:hover {
+          background-color: #fbbb7f; }
+          .section-grid__sale-btn-btn:hover a {
+            color: white; }
+        .section-grid__sale-btn-btn a {
+          color: orange; }
   .section-grid__offer {
     background-color: orange;
     grid-column-start: 2;
