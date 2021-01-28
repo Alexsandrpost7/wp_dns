@@ -235,12 +235,12 @@ body {
 
 .section-grid {
 
-    background-color: rgba(206, 245, 255, 0.596);
+    background-color: rgba(197, 200, 206, 0.342);
     display: grid;
     justify-content: center;
 
     grid-template-columns: 250px 450px 150px 300px;
-    grid-template-rows: 200px 150px 150px;
+    grid-template-rows: 200px 20px 200px 150px;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     padding: 20px 40px 20px 40px;
@@ -249,7 +249,7 @@ body {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 1;
-        grid-row-end: 4;
+        grid-row-end: 5;
         background-color:white;
         border-radius: 10px;
         box-shadow: -13px 11px 12px -5px rgba(123, 125, 128, 0.2);
@@ -263,13 +263,12 @@ body {
         grid-row-start: 1;
         grid-row-end: 2;
 
-     
-        .swiper-container {
+        &-swiper1 {
             width: 600px;
             height: 200px;
-            // border: 2px solid black;
+            //    border: 2px solid black;
         }
-        
+
     }
    
   
@@ -372,28 +371,137 @@ body {
         }
     }
 
-    &__offer {
-        background-color: orange;
+    &__subtitle {
         grid-column-start: 2;
         grid-column-end: 5;
         grid-row-start: 2;
         grid-row-end: 3;
+
+        font-size: 24px;
+        font-weight: 900;
     }
 
+    &__offer {
+        background-color: white;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 4;
+
+        // background-color:white;
+        border-radius: 10px;
+        box-shadow: -13px 11px 12px -5px rgba(123, 125, 128, 0.2);
+        
+        &-swiper2 {
+            height: 140px;
+
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    // border: 2px solid;
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    font-size: 18px;
+                    color: rgba(15, 15, 17, 0.952);
+                }
+
+                a:hover {
+                    color: rgb(251, 187, 127);
+                }
+            }
+            
+            .swiper2__img {
+                height: 130px;
+                width: 120px;
+                background-color: burlywood;
+            }
+            
+            .swiper2__text {
+                padding-left: 10px;
+                // align-items: center;
+
+            }
+
+            .swiper-button-prev, .swiper-button-next {
+                display: none;
+            }
+
+            &:hover .swiper-button-next {
+                display: block;
+            }
+
+            &:hover .swiper-button-prev {
+                display: block;
+            }
+            // background-color: red;
+        }
+
+        &-nav {
+            background-color: white;
+            // display: block;
+            // border: 2px solid black;
+            height: 30px;
+            ul {
+                display: flex;
+                list-style: none;
+            }
+            
+            li {
+                padding-left: 35px;
+                
+            }
+            
+            a {
+                font-size: 18px;
+                text-decoration: none;
+                // text-decoration-line: double;
+                border-bottom: 1px dashed;
+                color: rgba(81, 81, 85, 0.89);
+
+            }
+
+            .active {
+                border-radius: 4px;
+                background-color: rgba(81, 81, 85, 0.89);
+                color: black;
+                border: none;
+                padding: 5px;
+            }
+
+            a:hover {
+                color: rgb(251, 187, 127);
+            }
+        }
+    }
+
+    
     &__news1 {
         background-color: pink;
         grid-column-start: 2;
         grid-column-end: 3;
-        grid-row-start: 3;
-        grid-row-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+
+        background-color:white;
+        border-radius: 10px;
+        box-shadow: -13px 11px 12px -5px rgba(123, 125, 128, 0.2);
+
     }
 
     &__news2 {
         background-color: paleturquoise;
         grid-column-start: 3;
         grid-column-end: 5;
-        grid-row-start: 3;
-        grid-row-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+
+        background-color:white;
+        border-radius: 10px;
+        box-shadow: -13px 11px 12px -5px rgba(123, 125, 128, 0.2);
     }
 }
 
