@@ -239,7 +239,7 @@ body {
     display: grid;
     justify-content: center;
 
-    grid-template-columns: 250px 450px 150px 300px;
+    grid-template-columns: 300px 450px 150px 300px;
     grid-template-rows: 200px 20px 200px 150px;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
@@ -251,8 +251,74 @@ body {
         grid-row-start: 1;
         grid-row-end: 5;
         background-color:white;
+        // background-color: gray;
         border-radius: 10px;
         box-shadow: -13px 11px 12px -5px rgba(123, 125, 128, 0.2);
+
+            &-wr {
+                // padding-top: 15px;
+                // padding-bottom: 15px;
+
+                a {
+                    text-decoration: none;
+                    
+                }
+
+                &-a {
+                    // border: 1px solid;
+                    min-width: 200px;
+                }
+
+                a:hover {
+                    color: rgb(251, 187, 127);
+                }
+
+                &-a-top {
+                    font-size: 18px;
+                    color: black;
+                }
+                
+                &-a-down {
+                    color: rgba(81, 81, 85, 0.89);
+                }
+            }
+
+            &-wr:first-child {padding-top: 15px;}
+            &-wr:last-child {padding-bottom: 15px;}
+
+            &-icon {
+                margin-top: 3px;
+                margin-left: 5px;
+                // border: 1px solid;
+            }
+
+            &-wr-items {
+                // background-color: hotpink;
+                display: flex;
+                justify-content: space-around;
+                height: 60px;
+                align-items: center;
+                // border: 1px solid;
+            }
+
+            &-wr-items:hover {
+                background-color: rgba(216, 212, 212, 0.575);
+
+            }
+
+            // &-wr-items:hover .&-wr-items-dropdown {
+            //     // display: block;
+            //     background-color: chartreuse;
+            // }
+
+            &-wr-items-dropdown {
+                // display: none;
+                height: 600px;
+                width: 850px;
+                border: 1px solid;
+                background-color: burlywood;
+            }
+
     }
 
     &__slider {
@@ -262,7 +328,7 @@ body {
         grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 2;
-
+        
         &-swiper1 {
             width: 600px;
             height: 200px;
@@ -407,6 +473,7 @@ body {
                     text-decoration: none;
                     font-size: 18px;
                     color: rgba(15, 15, 17, 0.952);
+                    
                 }
 
                 a:hover {
@@ -466,7 +533,8 @@ body {
 
             .active {
                 border-radius: 4px;
-                background-color: rgba(81, 81, 85, 0.89);
+                // background-color: rgba(81, 81, 85, 0.89);
+                background-color: rgba(197, 200, 206, 0.342);
                 color: black;
                 border: none;
                 padding: 5px;
