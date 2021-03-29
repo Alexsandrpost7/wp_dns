@@ -5,16 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Магазин ДНС</title>
     <link rel="stylesheet" href="/css/style.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
 </head>
 <body>
+    <!-- section header -->
    <section class="section-header">
+       <div class="section-header-bckr">
+
+
         <div class="section-header-title">
-            <div class="section-header-title__cite"> Определение города</div>
+            <div class="section-header-title__city"> Определение города</div>
             <div class="section-header-title__menu">
                 <ul class="section-header-title__menu-top">
                     <li><a href="#">Магазины</a></li>
-                    <li><a href="#" lass="section-header-title__menu-down">Покупателям</a>
+                    <li class="menu__list-dns"><a href="#" lass="section-header-title__menu-down">Покупателям</a>
                         <ul class="section-header-title__menu-submenu">
                             <li><a href="#">Как оформить заказ</a></li>
                             <li><a href="#">Доставка</a></li>
@@ -30,20 +37,334 @@
                 <div class="section-header-title-contact__telefone">8-800-77-07-99</div>
                 <div class="section-header-title-contact__time">(c 03:00 до 22:00)</div>
             </div>
+        </div>
 
         </div>
-        <div class="section-header__nav">er</div>
+        <div class="section-header__nav">
+            <div class="section-header__nav-wrapper">
+                <div class="section-header__nav-wrapper-logo">
+                    <img src="/img/logo.png">
+                </div>
+                <div class="section-header__nav-wrapper-search">
+                    <form class="section-header__nav-wrapper-search-form" action="" method="get">
+                        <input class="section-header__nav-wrapper-search-input" name="s" placeholder="Поиск по сайту" type="search">
+                        <button class="section-header__nav-wrapper-search-btn" type="submit">
+                            <span>
+                                <img class="section-header__nav-wrapper-search-btn-icon" src="/img/icon/search.svg" alt="">
+                            </span>
+                            <span>Поиск</span>
+                        </button>
+                    </form>
+                </div>
+                <div class="section-header__nav-wrapper-btn">
+                    <div class="section-header__nav-wrapper-btn-item">
+                        <a href="">
+                            <span>
+                                <img class="section-header__nav-wrapper-btn-item-icon" src="/img/icon/compare.svg">
+                            </span>
+                            <span class="section-header__nav-wrapper-btn-item-text">Сравнить</span>
+                        </a>
+                    </div>
+                    <div class="section-header__nav-wrapper-btn-item">
+                        <a href="">
+                            <span>
+                               <img class="section-header__nav-wrapper-btn-item-icon" src="/img/icon/heart.svg">
+                            </span>
+                            <span class="section-header__nav-wrapper-btn-item-text">Избранное</span>
+                        </a>
+                    </div>
+                    <div class="section-header__nav-wrapper-btn-item">
+                        <a href="">
+                            <span>
+                                <img class="section-header__nav-wrapper-btn-item-icon" src="/img/icon/shop-cart.svg">
+                            </span>
+                            <span class="section-header__nav-wrapper-btn-item-text">Корзина</span>
+                        </a>
+                    </div>
+                <!-- <div class="section-header__nav-notice"></div> -->
+                <div class="section-header__nav-login">
+                    <span>
+                        <img class="section-header__nav-login-icon" src="/img/icon/notice.svg" alt=""> </span>
+                    <button class="section-header__nav-text">Войти</button>
+                </div>
+        </div>
+
+        </div>
         <div class="section-header__notice">efgfe</div>
    </section>
+   <!-- / section header -->
    <!-- section-grid -->
-   <section class="section-grid">
+   <section class="section-grid grid-size">
+<!-- grid__menu +++++++++++++++++++++++++++++++ -->
+        <div class="section-grid__menu">
+            <div class="section-grid__menu-wr">
+                <div class="section-grid__menu-wr-items">
+                    <div class="section-grid__menu-icon">
+                        <img class="section-grid__menu-icon" src="/img/icon/menu_icon_1.png">
+                    </div>
+                    <div class="section-grid__menu-wr-a">
+                        <a class="section-grid__menu-wr-a-top" href="">Бытовая техника</a> <br>
+                        <a class="section-grid__menu-wr-a-down" href="">для дома</a>
+                        <a class="section-grid__menu-wr-a-down" href="">уход за собой</a>
+                        <div class="section-grid__menu-wr-a-active">
+                            <div class="section-grid__menu-wr-a-active-kichet">
+                                <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                                    <a href="">Приготовление пищи 2395</a>
+                                </div>
+                                <!-- <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                                    <a href="">Приготовление напитков 2581</a>
+                                </div>
+                                <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                                    <a href="">Холодильное оборудование 1954</a>
+                                </div>
+                                <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                                    <a href="">Посудомоечные машины 393</a>
+                                </div>
+                                <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                                    <a href="">Встраиваемая техника 5036</a>
+                                </div>
+                                <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                                    <a href="">Нарезка, смешивание, упаковка 1180</a>
+                                </div>
+                                <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                                    <a href="">Приготовление десертов 127</a>
+                                </div>
+                                <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                                    <a href="">Измерение 185</a>
+                                </div>
+                                <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                                    <a href="">Прочие товары для кухни 130</a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="section-grid__menu-wr-items-dropdown">
+                    <div class="section-grid__menu-wr-a">
+                        <a class="section-grid__menu-wr-a-top" href="">Выпадающие меню</a> <br>
+                        <a class="section-grid__menu-wr-a-down" href="">Выпадающие меню</a>
+                        <a class="section-grid__menu-wr-a-down" href="">Выпадающие меню</a>
+                    </div>  
+                </div>  
+                <div class="section-grid__menu-wr-items">
+                    <div class="section-grid__menu-icon">
+                        <img class="section-grid__menu-icon" src="/img/icon/menu_icon_2.png">
+                    </div>
+                    <div class="section-grid__menu-wr-a">
+                        <a class="section-grid__menu-wr-a-top" href="">Смартофоны и гаджеты</a> <br>
+                        <a class="section-grid__menu-wr-a-down" href="">планшеты</a>
+                        <a class="section-grid__menu-wr-a-down" href="">фототехника</a>
+                    </div>    
+                </div>
+                <div class="section-grid__menu-wr-items">
+                    <div class="section-grid__menu-icon">
+                        <img class="section-grid__menu-icon" src="/img/icon/menu_icon_3.png">
+                    </div>
+                    <div class="section-grid__menu-wr-a">
+                        <a class="section-grid__menu-wr-a-top" href="">ТВ и Развлечения</a> <br>
+                        <a class="section-grid__menu-wr-a-down" href="">аудио</a>
+                        <a class="section-grid__menu-wr-a-down" href="">видеоигры</a>
+                    </div>    
+                </div>
+                <div class="section-grid__menu-wr-items">
+                    <div class="section-grid__menu-icon">
+                        <img class="section-grid__menu-icon" src="/img/icon/menu_icon_4.png">
+                    </div>
+                    <div class="section-grid__menu-wr-a">
+                        <a class="section-grid__menu-wr-a-top" href="">Комьютеры</a> <br>
+                        <a class="section-grid__menu-wr-a-down" href="">комплектующие</a>
+                        <a class="section-grid__menu-wr-a-down" href="">ноутбуки</a>
+                    </div>    
+                </div><div class="section-grid__menu-wr-items">
+                    <div class="section-grid__menu-icon">
+                        <img class="section-grid__menu-icon" src="/img/icon/menu_icon_5.png">
+                    </div>
+                    <div class="section-grid__menu-wr-a">
+                        <a class="section-grid__menu-wr-a-top" href="">Офис и сеть</a> <br>
+                        <a class="section-grid__menu-wr-a-down" href="">кресла</a>
+                        <a class="section-grid__menu-wr-a-down" href="">проекторы</a>
+                    </div>    
+                </div>
+                <div class="section-grid__menu-wr-items">
+                    <div class="section-grid__menu-icon">
+                        <img class="section-grid__menu-icon" src="/img/icon/menu_icon_6.png">
+                    </div>
+                    <div class="section-grid__menu-wr-a">
+                        <a class="section-grid__menu-wr-a-top" href="">Аксессуары</a> <br>
+                        <a class="section-grid__menu-wr-a-down" href="">наушники</a>
+                        <a class="section-grid__menu-wr-a-down" href="">клавиатуры</a>
+                    </div>    
+                </div><div class="section-grid__menu-wr-items">
+                    <div class="section-grid__menu-icon">
+                        <img class="section-grid__menu-icon" src="/img/icon/menu_icon_7.png">
+                    </div>
+                    <div class="section-grid__menu-wr-a">
+                        <a class="section-grid__menu-wr-a-top" href="">Автотовары</a> <br>
+                        <a class="section-grid__menu-wr-a-down" href="">звук</a>
+                        <a class="section-grid__menu-wr-a-down" href="">автокресла</a>
+                    </div>    
+                </div>
+                <div class="section-grid__menu-wr-items">
+                    <div class="section-grid__menu-icon">
+                        <img class="section-grid__menu-icon" src="/img/icon/menu_icon_8.png">
+                    </div>
+                    <div class="section-grid__menu-wr-a">
+                        <a class="section-grid__menu-wr-a-top" href="">Инструмент</a> <br>
+                        <a class="section-grid__menu-wr-a-down" href="">силовой</a>
+                        <a class="section-grid__menu-wr-a-down" href="">садовый</a>
+                    </div>    
+                </div>
+                <div class="section-grid__menu-wr-items">
+                    <div class="section-grid__menu-icon">
+                        <img class="section-grid__menu-icon" src="/img/icon/menu_icon_9.png">
+                    </div>
+                    <div class="section-grid__menu-wr-a">
+                        <a class="section-grid__menu-wr-a-top" href="">Услуги</a> <br>
+                        <a class="section-grid__menu-wr-a-down" href="">установка</a>
+                        <a class="section-grid__menu-wr-a-down" href="">демонтаж</a>
+                    </div>    
+                </div>
+                <div class="section-grid__menu-wr-items">
+                    <div class="section-grid__menu-icon">
+                        <img class="section-grid__menu-icon" src="/img/icon/menu_icon_10.png">
+                    </div>
+                    <div class="section-grid__menu-wr-a">
+                        <a class="section-grid__menu-wr-a-top" href="">Уцененные товары</a>
+                    </div>    
+                </div>
+            </div>
+            
+        </div>
+<!-- / grid__menu +++++++++++++++++++++++++++++++ -->
 
-        <div class="section-grid__menu">231</div>
-        <div class="section-grid__slider">231</div>
-        <div class="section-grid__sale">231</div>
-        <div class="section-grid__offer">231</div>
+
+<!-- slider swiper +++++++++++++++++++++++++++++ -->
+        <div class="section-grid__slider">
+
+            <div class="swiper-container section-grid__slider-swiper1">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="/img/sw-1_cr.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/sw-2_cr.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/sw-3_cr.png">
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div> 
+        </div>
+<!-- / slider swiper ++++++++++++++++++++++++++++ -->
+
+<!-- +++++ sale +++++++++++++++++++++++++++++++++ -->
+        <div class="section-grid__sale">
+            <div class="section-grid__sale-title">
+                <a href="" class="section-grid__sale-title-a">Акции</a>
+            </div>
+            <div class="section-grid__sale-subtitle">
+                <ul class="section-grid__sale-subtitle-ul">
+                    <li class="section-grid__sale-subtitle-li">
+                        <span><a href="">Товары со скидкой</a></span>
+                        <span></span>
+                    </li>
+                    <li class="section-grid__sale-subtitle-li">
+                        <span><a href="">Рассрочка и </a></span>
+                        <span></span>
+                    </li>
+                    <li class="section-grid__sale-subtitle-li">
+                        <span><a href="">Выгодные комплекты</a></span>
+                        <span></span>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="section-grid__sale-btn">
+                <button class="section-grid__sale-btn-btn">
+                    <a href="">Все акции</a>
+                </button>
+            </div>
+
+
+        </div>
+<!-- +++++ sale +++++++++++++++++++++++++++++++++ -->
+        <div class="section-grid__subtitle">Актуальные предложения</div>
+<!-- section-grid__offer +++++++++++++++++++++++  -->
+        <div class="section-grid__offer">
+            <div class="section-grid__offer-nav">
+                <ul>
+                    <li><a class="active" href="">Пригодится зимой</a></li>
+                    <li><a href="">Согравающие напитки</a></li>
+                    <li><a href="">Боремся с сухостью</a></li>
+                    <li><a href="">Тепло в каждый дом</a></li>
+                </ul>
+            </div>
+            <div class="swiper-container section-grid__offer-swiper2">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <!-- первый -->
+                        <!-- <img src="/img/sw-1_cr.png"> -->
+                        <a href=""> 
+                            <img class="swiper2__img" src="/img/offer/winter/winter_1.png" alt="">
+                           <span class="swiper2__text">Бензиновые пилы</span> 
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- первый -->
+                        <!-- <img src="/img/sw-1_cr.png"> -->
+                        <a href=""> 
+                            <img class="swiper2__img" src="/img/offer/winter/winter_2.png" alt="">
+                           <span class="swiper2__text">Снегоуборщики</span> 
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- первый -->
+                        <!-- <img src="/img/sw-1_cr.png"> -->
+                        <a href=""> 
+                            <img class="swiper2__img" src="/img/offer/winter/winter_3.png" alt="">
+                           <span class="swiper2__text">Электрические тепловые пушки</span> 
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        второй
+                        <!-- <img src="/img/sw-2_cr.png"> -->
+                    </div>
+                    <div class="swiper-slide">
+                        третий
+                        <!-- <img src="/img/sw-3_cr.png"> -->
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div> 
+        </div>
+<!-- / section-grid__offer +++++++++++++++++++++++  -->
+<!-- section-grid__news1 ++++++++++++++++++++++++++ -->
         <div class="section-grid__news1">231</div>
+<!-- / section-grid__news1 ++++++++++++++++++++++++++ -->
+<!-- section-grid__news2 ++++++++++++++++++++++++++ -->
         <div class="section-grid__news2">231</div>
+<!-- / section-grid__news2 ++++++++++++++++++++++++++ -->
    </section>
    <!-- / section-grid -->
    <section class="section-slider"></section>
@@ -52,5 +373,40 @@
    <section class="section-offer-2"></section>
    <section class="section-inform"></section>
    <section class="section-footer"></section>
+
+   <!-- Swiper Script -->
+     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+   <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+
+   <script src="/script/swiper_test.js"></script>
+
+<!-- jquery -->
+<script
+			  src="https://code.jquery.com/jquery-3.5.1.js"
+			  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+              crossorigin="anonymous"></script>
+
+<script src="/script/dropdown-menu.js"></script>
+<!--  / jquery -->
+
 </body>
 </html>
+
+<!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+  </div> -->
+  
+
