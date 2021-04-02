@@ -52,7 +52,7 @@
                             <span>
                                 <img class="section-header__nav-wrapper-search-btn-icon" src="/img/icon/search.svg" alt="">
                             </span>
-                            <span>Поиск</span>
+                            <!-- <span>Поиск</span> -->
                         </button>
                     </form>
                 </div>
@@ -98,7 +98,7 @@
 <!-- grid__menu +++++++++++++++++++++++++++++++ -->
         <div class="section-grid__menu">
             <div class="section-grid__menu-wr">
-                <div class="section-grid__menu-wr-items">
+                <div href="#tab-1" class="section-grid__menu-wr-items">
                     <div class="section-grid__menu-icon">
                         <img class="section-grid__menu-icon" src="/img/icon/menu_icon_1.png">
                     </div>
@@ -106,11 +106,11 @@
                         <a class="section-grid__menu-wr-a-top" href="">Бытовая техника</a> <br>
                         <a class="section-grid__menu-wr-a-down" href="">для дома</a>
                         <a class="section-grid__menu-wr-a-down" href="">уход за собой</a>
-                        <div class="section-grid__menu-wr-a-active">
+                        <!-- <div id="tab-1" class="section-grid__menu-wr-a-none">
                             <div class="section-grid__menu-wr-a-active-kichet">
                                 <div class="section-grid__menu-wr-a-active-kichet-down"> 
                                     <a href="">Приготовление пищи 2395</a>
-                                </div>
+                                </div> -->
                                 <!-- <div class="section-grid__menu-wr-a-active-kichet-down"> 
                                     <a href="">Приготовление напитков 2581</a>
                                 </div>
@@ -135,18 +135,18 @@
                                 <div class="section-grid__menu-wr-a-active-kichet-down"> 
                                     <a href="">Прочие товары для кухни 130</a>
                                 </div> -->
-                            </div>
-                        </div>
+                            <!-- </div>
+                        </div> -->
                     </div>  
                 </div>
-                <div class="section-grid__menu-wr-items-dropdown">
+                <!-- <div class="section-grid__menu-wr-items-dropdown">
                     <div class="section-grid__menu-wr-a">
                         <a class="section-grid__menu-wr-a-top" href="">Выпадающие меню</a> <br>
                         <a class="section-grid__menu-wr-a-down" href="">Выпадающие меню</a>
                         <a class="section-grid__menu-wr-a-down" href="">Выпадающие меню</a>
                     </div>  
-                </div>  
-                <div class="section-grid__menu-wr-items">
+                </div>   -->
+                <div href="#tab-2" class="section-grid__menu-wr-items">
                     <div class="section-grid__menu-icon">
                         <img class="section-grid__menu-icon" src="/img/icon/menu_icon_2.png">
                     </div>
@@ -156,6 +156,8 @@
                         <a class="section-grid__menu-wr-a-down" href="">фототехника</a>
                     </div>    
                 </div>
+                <!-- <div  id="tab-2" class="section-grid__menu-wr-a-none"></div> -->
+                
                 <div class="section-grid__menu-wr-items">
                     <div class="section-grid__menu-icon">
                         <img class="section-grid__menu-icon" src="/img/icon/menu_icon_3.png">
@@ -235,6 +237,47 @@
             </div>
             
         </div>
+        <div class="menu-dropdown">
+            <div class="menu-dropdown-tabs">
+                <div id="tab-1" class="menu-dropdown-items">
+                    <div class="section-grid__menu-wr-a-active-kichet">
+                        <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                            <a href="">Приготовление пищи 2395</a>
+                        </div>
+                        <!-- <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                            <a href="">Приготовление напитков 2581</a>
+                        </div>
+                        <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                            <a href="">Холодильное оборудование 1954</a>
+                        </div>
+                        <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                            <a href="">Посудомоечные машины 393</a>
+                        </div>
+                        <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                            <a href="">Встраиваемая техника 5036</a>
+                        </div>
+                        <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                            <a href="">Нарезка, смешивание, упаковка 1180</a>
+                        </div>
+                        <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                            <a href="">Приготовление десертов 127</a>
+                        </div>
+                        <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                            <a href="">Измерение 185</a>
+                        </div>
+                        <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                            <a href="">Прочие товары для кухни 130</a>
+                        </div> -->
+                    </div>
+                </div>
+                <div  id="tab-2" class="menu-dropdown-items">
+                    <a href=""> тест</a>
+                </div>
+            </div>
+
+
+        </div>
+
 <!-- / grid__menu +++++++++++++++++++++++++++++++ -->
 
 
@@ -303,67 +346,272 @@
 <!-- section-grid__offer +++++++++++++++++++++++  -->
         <div class="section-grid__offer">
             <div class="section-grid__offer-nav">
-                <ul>
-                    <li><a class="active" href="">Пригодится зимой</a></li>
-                    <li><a href="">Согравающие напитки</a></li>
-                    <li><a href="">Боремся с сухостью</a></li>
-                    <li><a href="">Тепло в каждый дом</a></li>
-                </ul>
+                    <div href="#tab-21" class="section-grid__offer-nav-triggers">
+                        <a href="">Пригодится зимой</a>
+                    </div>
+                    <div href="#tab-22" class="section-grid__offer-nav-triggers">
+                        <a href="">Порядок в саду</a>
+                    </div>
+                    <div href="#tab-23" class="section-grid__offer-nav-triggers">
+                        <a href="">Вдохновляемся весной</a>
+                    </div>
+                    <div href="#tab-24" class="section-grid__offer-nav-triggers">
+                        <a href="">Боремся с сухостью</a>
+                    </div>
+                    
+                    <!-- Второй вариант через ссылки -->
+                    
+
+
+
             </div>
-            <div class="swiper-container section-grid__offer-swiper2">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <!-- первый -->
-                        <!-- <img src="/img/sw-1_cr.png"> -->
-                        <a href=""> 
-                            <img class="swiper2__img" src="/img/offer/winter/winter_1.png" alt="">
-                           <span class="swiper2__text">Бензиновые пилы</span> 
-                        </a>
+
+            <div id="tab-21" class="section-grid__offer-nav-tabs-content-2__items">
+
+                <div class="swiper-container section-grid__offer-swiper2">
+
+                    
+                    <div id="tab-1" class="swiper-wrapper 1section-grid__offer-nav-tabs-content-2__items">
+                        <!-- Slides -->
+                    
+                        <div class="swiper-slide">
+                            <a href=""> 
+                                <img class="swiper2__img" src="/img/offer/winter/winter_1.png" alt="">
+                            <span class="swiper2__text">Бензиновые пилы</span> 
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""> 
+                                <img class="swiper2__img" src="/img/offer/winter/winter_2.png" alt="">
+                            <span class="swiper2__text">Снегоуборщики</span> 
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""> 
+                                <img class="swiper2__img" src="/img/offer/winter/winter_3.png" alt="">
+                            <span class="swiper2__text">Электрические тепловые пушки</span> 
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            второй
+                            <!-- <img src="/img/sw-2_cr.png"> -->
+                        </div>
+                        <div class="swiper-slide">
+                            третий
+                            <!-- <img src="/img/sw-3_cr.png"> -->
+                        </div>
+
                     </div>
-                    <div class="swiper-slide">
-                        <!-- первый -->
-                        <!-- <img src="/img/sw-1_cr.png"> -->
-                        <a href=""> 
-                            <img class="swiper2__img" src="/img/offer/winter/winter_2.png" alt="">
-                           <span class="swiper2__text">Снегоуборщики</span> 
-                        </a>
+
+                    
+                    <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div> 
+
+            </div>
+
+
+            <div id="tab-22" class="section-grid__offer-nav-tabs-content-2__items">
+
+                <div class="swiper-container section-grid__offer-swiper2">
+
+                    
+                    <div id="tab-1" class="swiper-wrapper 1section-grid__offer-nav-tabs-content-2__items">
+                        <!-- Slides -->
+                    
+                        <div class="swiper-slide">
+                            <a href=""> 
+                                <img class="swiper2__img" src="/img/offer/garden/garden-1.png" alt="">
+                            <span class="swiper2__text">Бензиновые пилы</span> 
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""> 
+                                <img class="swiper2__img" src="/img/offer/garden/garden-2.png" alt="">
+                            <span class="swiper2__text">Пылесосы садовые <br>
+                            (воздуходувы)
+                            </span> 
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""> 
+                                <img class="swiper2__img" src="/img/offer/garden/garden-3.png" alt="">
+                            <span class="swiper2__text">Мотоблоки</span> 
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            Второй второй Второй
+                            <!-- <img src="/img/sw-2_cr.png"> -->
+                        </div>
+                        <div class="swiper-slide">
+                            Второй третий
+                            <!-- <img src="/img/sw-3_cr.png"> -->
+                        </div>
+
                     </div>
-                    <div class="swiper-slide">
-                        <!-- первый -->
-                        <!-- <img src="/img/sw-1_cr.png"> -->
-                        <a href=""> 
-                            <img class="swiper2__img" src="/img/offer/winter/winter_3.png" alt="">
-                           <span class="swiper2__text">Электрические тепловые пушки</span> 
-                        </a>
+
+                    
+                    <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div> 
+
+            </div>
+
+
+            <div id="tab-23" class="section-grid__offer-nav-tabs-content-2__items">
+
+                <div class="swiper-container section-grid__offer-swiper2">
+
+                    
+                    <div id="tab-1" class="swiper-wrapper 1section-grid__offer-nav-tabs-content-2__items">
+                        <!-- Slides -->
+                    
+                        <div class="swiper-slide">
+                            <a href=""> 
+                                <img class="swiper2__img" src="/img/offer/spring/spring-1.png" alt="">
+                            <span class="swiper2__text">Графические планшеты</span> 
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""> 
+                                <img class="swiper2__img" src="/img/offer/spring/spring-2.png" alt="">
+                            <span class="swiper2__text">Цифровые фортепиано</span> 
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""> 
+                                <img class="swiper2__img" src="/img/offer/spring/spring-3.png" alt="">
+                            <span class="swiper2__text">3D Принтеры</span> 
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            Второй второй Второй
+                            <!-- <img src="/img/sw-2_cr.png"> -->
+                        </div>
+                        <div class="swiper-slide">
+                            Второй третий
+                            <!-- <img src="/img/sw-3_cr.png"> -->
+                        </div>
+
                     </div>
-                    <div class="swiper-slide">
-                        второй
-                        <!-- <img src="/img/sw-2_cr.png"> -->
+
+                    
+                    <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div> 
+
+            </div>
+
+
+            <div id="tab-24" class="section-grid__offer-nav-tabs-content-2__items">
+
+                <div class="swiper-container section-grid__offer-swiper2">
+
+                    
+                    <div id="tab-1" class="swiper-wrapper 1section-grid__offer-nav-tabs-content-2__items">
+                        <!-- Slides -->
+                    
+                        <div class="swiper-slide">
+                            <a href=""> 
+                                <img class="swiper2__img" src="/img/offer/spring/spring-1.png" alt="">
+                            <span class="swiper2__text">Графические планшеты</span> 
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""> 
+                                <img class="swiper2__img" src="/img/offer/spring/spring-2.png" alt="">
+                            <span class="swiper2__text">Цифровые фортепиано</span> 
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""> 
+                                <img class="swiper2__img" src="/img/offer/spring/spring-3.png" alt="">
+                            <span class="swiper2__text">3D Принтеры</span> 
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            Второй второй Второй
+                            <!-- <img src="/img/sw-2_cr.png"> -->
+                        </div>
+                        <div class="swiper-slide">
+                            Второй третий
+                            <!-- <img src="/img/sw-3_cr.png"> -->
+                        </div>
+
                     </div>
-                    <div class="swiper-slide">
-                        третий
-                        <!-- <img src="/img/sw-3_cr.png"> -->
-                    </div>
-                </div>
-                <!-- If we need pagination -->
-                <!-- <div class="swiper-pagination"></div> -->
-            
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            
-                <!-- If we need scrollbar -->
-                <!-- <div class="swiper-scrollbar"></div> -->
-            </div> 
+
+                    
+                    <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div> 
+
+            </div>
+
         </div>
 <!-- / section-grid__offer +++++++++++++++++++++++  -->
 <!-- section-grid__news1 ++++++++++++++++++++++++++ -->
-        <div class="section-grid__news1">231</div>
+        <div class="section-grid__news1">
+            <div class="section-grid__news1-wrapper">
+                <div class="section-grid__news1-wrapper-text">
+                    Привет,<br>
+                    Получай бонусы и спецпредложения,
+                    сохраняй и отслеживай заказы<br>
+                </div>
+                <div class="section-grid__news1-wrapper-icon">
+                    <img src="img/offer/news/news1-1.png" alt="">
+                </div>
+            </div>
+            <div class="section-grid__news1-link">
+                <a href="">Перейти в профиль</a>
+                <a href="">Мои заказы</a>
+            </div>
+        </div>
 <!-- / section-grid__news1 ++++++++++++++++++++++++++ -->
 <!-- section-grid__news2 ++++++++++++++++++++++++++ -->
-        <div class="section-grid__news2">231</div>
+<div class="section-grid__news2">
+    <div class="section-grid__news1-wrapper">
+        <div class="section-grid__news1-wrapper-text">
+            Собери свой ПК<br>
+            Простой инструмент без проблем<br>
+            с совместимостью
+        </div>
+        <div class="section-grid__news1-wrapper-icon">
+            <img src="img/offer/news/news2-1.png" alt="">
+        </div>
+    </div>
+    <div class="section-grid__news1-link">
+        <a href="">Собрать ПК</a>
+        <a href="">Сборки пользователей</a>
+    </div>
+</div>
 <!-- / section-grid__news2 ++++++++++++++++++++++++++ -->
    </section>
    <!-- / section-grid -->
@@ -373,6 +621,12 @@
    <section class="section-offer-2"></section>
    <section class="section-inform"></section>
    <section class="section-footer"></section>
+
+   <!-- TEST block ++++++++++++++++++++++++++++++++ -->
+
+
+
+   <!-- / TEST block ++++++++++++++++++++++++++++++++ -->
 
    <!-- Swiper Script -->
      <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
@@ -387,26 +641,13 @@
               crossorigin="anonymous"></script>
 
 <script src="/script/dropdown-menu.js"></script>
+<script src="/script/tab_slider-2.js"></script>
+<script src="/script/scroll_menu.js"></script>
 <!--  / jquery -->
 
 </body>
 </html>
 
-<!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
-    <li class="nav-item" role="presentation">
-      <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-    </li>
-    <li class="nav-item" role="presentation">
-      <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
-    </li>
-    <li class="nav-item" role="presentation">
-      <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-    </li>
-  </ul>
-  <div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
-  </div> -->
+
   
 

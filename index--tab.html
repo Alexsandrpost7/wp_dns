@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab</title>
+</head>
+<body>
+   
+        <!-- <div class="wrapper">
+            <div class="tabs">
+                <div class="tabs-triggers">
+                    <a href="#tab-1" class="tabs-triggers__item">Tab 1</a>
+                    <a href="#tab-2" class="tabs-triggers__item">Tab 2</a>
+                </div>
+                <div class="tabs-contant">
+                    <div id="tab-1" class="tabs-content__item" >Content 1</div>
+                    <div id="tab-2" class="tabs-content__item" >Content 2</div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="wrapper">
+            <div class="tabs">
+                <div class="tabs-triggers">
+                  <div href="#tab-1" class="tabs-triggers__item">
+                      <a>Tab 1</a>
+                  </div>
+                  <div href="#tab-2" class="tabs-triggers__item">
+                      <a>Tab 2</a>
+                  </div>
+                </div>
+                <!-- <div class="tabs-contant">
+                    <div id="tab-1" class="tabs-content__item" >
+                        <a href="">Content 1</a>
+                    </div>
+                    <div id="tab-2" class="tabs-content__item" >Content 2</div>
+                </div> -->
+            </div>
+        </div>
+
+
+
+        <div class="wrapper-2">
+            <div class="tabs-contant">
+                <div id="tab-1" class="tabs-content__item" >
+                    
+                    <!-- <a href="">Content 1</a> -->
+
+                    <div class="section-grid__menu-wr-a-active-kichet">
+                        <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                            <a href="">Приготовление пищи 2395</a>
+                        </div>
+                        <!-- <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                            <a href="">Приготовление напитков 2581</a>
+                        </div>
+                        <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                            <a href="">Холодильное оборудование 1954</a>
+                        </div>
+                        <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                            <a href="">Посудомоечные машины 393</a>
+                        </div>
+                        <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                            <a href="">Встраиваемая техника 5036</a>
+                        </div>
+                        <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                            <a href="">Нарезка, смешивание, упаковка 1180</a>
+                        </div>
+                        <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                            <a href="">Приготовление десертов 127</a>
+                        </div>
+                        <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                            <a href="">Измерение 185</a>
+                        </div>
+                        <div class="section-grid__menu-wr-a-active-kichet-down"> 
+                            <a href="">Прочие товары для кухни 130</a>
+                        </div> -->
+                    </div>
+                </div>
+                <div id="tab-2" class="tabs-content__item" >Content 2
+
+                </div>
+            </div>
+
+        </div>
+
+        <style>
+
+            .wrapper-2 {
+                
+                width: 500px;
+                height: 200px;
+                /* margin-top: 200px; */
+                border: 2px solid black;
+            }
+            .wrapper {
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+            .tabs{
+                border: 2px solid black;
+            }
+            .tabs-triggers {
+                display: flex;
+            }
+            .tabs-triggers__item {
+                color: #000;
+                text-align: center;
+                padding: 20px;
+                text-decoration: none;
+                flex-grow: 1;
+            }
+
+            .tabs-triggers__item--active {
+                background-color: #eee;
+            }
+            .tabs-contant {}
+            .tabs-content__item {
+                display: none;
+                background-color: #eee;
+                padding: 20px;
+            }
+
+            .tabs-content__item--active {
+                display: block;
+                /* display: none; */
+            }
+
+        </style>
+
+    
+    <script
+			  src="https://code.jquery.com/jquery-3.5.1.js"
+			  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+              crossorigin="anonymous">
+    </script>
+
+    <script src="/script/tab_vitaliy.js"></script>
+</body>
+</html>

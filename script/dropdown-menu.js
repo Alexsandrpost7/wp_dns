@@ -2,40 +2,32 @@
 $(document).ready(function() {
 
     $top_menu = $('.section-grid__menu-wr-items');
-    $down_menu = $('.section-grid__menu-wr-a-active')
-    $class_active = $('.active_menu');
-    $cnt = 0;
+    $down_menu = $('.menu-dropdown-items')
+    // $class_active = $('.section-grid__menu-wr-a-active');
+    $class_active = $('.menu-dropdown--active');
 
-    // $('.section-grid__menu-wr-items').hover(function () {
-    // $top_menu.hover(function () {
-        // alert( "Handler for .click() called." ); 
-        //  +ok $('.section-grid__menu-wr-items-dropdown').css('background-color' , 'red');
-        
-        // $('.section-grid__menu-wr-items-dropdown').css('display' , 'block');
-
-    // });
     
-    // if ($cnt = 1) {
-        // $('.section-grid__menu-wr-items').hover(function() {
-        $($top_menu).hover(function() {
+    // $('.section-grid__menu-wr-items').hover(function(e) {
+    $($top_menu).hover(function(e) {
+        e.preventDefault();
 
-            // if ($cnt == 1) {
-
-            //     $($down_menu).addClass('active_menu');
-
-            // }
-            //     $($down_menu).removeClass('active_menu');
-            //     $(this).addClass('active_menu');
-            // $('.section-grid__menu-wr-items').addClass('.active_menu');
-
-             $(this).toggleClass('active_menu');
+        $('.section-grid__menu-wr-items').removeClass('menu-dropdown--active');
+        // $($down_menu).removeClass($class_active);
 
 
+// alert ($(this).attr('href'));
 
-        });
-        
-    // };
-
-
+        // $($(this).attr('href')).addClass($class_active);
+        // $($(this).attr('href')).addClass('section-grid__menu-wr-a-active');
+        $($(this).attr('href')).addClass('menu-dropdown--active');
+            
+    }
+    ,function() {
+        // $($(this).attr('href') || $('.section-grid__menu-wr-a-active')).removeClass('section-grid__menu-wr-a-active')
+        // $($(this).attr('href') || $('.menu-dropdown--active').removeClass('menu-dropdown--active')
+     
+        $($(this).attr('href') || $($class_active)).removeClass('menu-dropdown--active')
+    }
+    );
 
 });
